@@ -1,4 +1,8 @@
 // Mixins Here
+.curved-borders () {
+   border-radius: 5px;
+}
+
 .custom-layout (@justify, @align: flex-start, @direction: row, @wrap: nowrap) {
    display: flex;
    flex-flow: @direction @wrap;
@@ -6,9 +10,8 @@
    align-items: @align;
 }
 
-.button (@text-color: black, @bg-color: magenta, @width: 100%, @padding: 0, @radius: 0) {
+.button (@text-color: black, @bg-color: magenta, @width: 100%, @padding: 0) {
    background-color: @bg-color;
-   border-radius: @radius;
    cursor: pointer;
    color: @text-color;
    font-size: 2rem;
