@@ -262,6 +262,7 @@ footer {
 }
 @media only screen and (max-width: 500px) {
   .home .walk {
+    margin-top: 1.6rem;
     padding: 1.6rem;
     flex-direction: column-reverse;
   }
@@ -289,6 +290,12 @@ footer {
   padding: 1rem;
   width: 120px;
   border-radius: 5px;
+}
+@media only screen and (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    width: auto;
+    padding: 1.6rem 0;
+  }
 }
 .home .walk .walk-text .btn:hover {
   background-color: #dee2e6;
