@@ -1,1 +1,32 @@
-// Navigation code here
+nav {
+   background-color: @nav-bg;
+   border-bottom: 2px solid @nav-border;
+   width: 100%;
+
+   .container {
+      .custom-layout(flex-start, center, column);
+   
+      h1 {
+         padding-top: 2rem;
+      }
+   
+      ul {
+         padding: 2rem 0;
+         min-width: 400px;
+         .custom-layout(space-evenly);
+   
+         a {
+            color: @nav-font;
+            font-size: 1.6rem;
+            text-decoration: none;
+            padding: 0.7rem;
+         }
+         a:visited {
+            color: @nav-font;
+         }
+         a:hover {
+            color: @waterloo;
+         }
+      }
+   }
+}

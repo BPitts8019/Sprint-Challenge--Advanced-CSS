@@ -1,1 +1,18 @@
 // Mixins Here
+.custom-layout (@justify, @align: flex-start, @direction: row, @wrap: nowrap) {
+   display: flex;
+   flex-flow: @direction @wrap;
+   justify-content: @justify;
+   align-items: @align;
+}
+
+.button (@text-color: black, @bg-color: magenta, @width: 100%, @padding: 0, @radius: 0) {
+   background-color: @bg-color;
+   border-radius: @radius;
+   cursor: pointer;
+   color: @text-color;
+   font-size: 2rem;
+   text-align: center;
+   padding: @padding;
+   width: @width;
+}
