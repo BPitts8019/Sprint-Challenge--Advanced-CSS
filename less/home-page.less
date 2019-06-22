@@ -3,8 +3,8 @@
 .home {
 
   .intro {
-    
     img {
+      .auto-scale();
       .curved-borders();
     }
 
@@ -15,7 +15,6 @@
     p {
       padding:0 15px;
     }
-  
   }
 
   .space-images {
@@ -28,6 +27,22 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+    }
+
+    @media @phone {
+      justify-content: center;
+
+      .blast {
+        width: 87%;
+      }
+
+      .sky {
+        display: none;
+      }
+
+      .launch {
+        display: none;
+      }
     }
   }
 
@@ -50,8 +65,17 @@
     display: flex;
     justify-content: center;
 
+    @media @phone {
+      padding: 1.6rem;
+      flex-direction: column-reverse;
+    }
+
     .walk-text {
       width: 50%;
+
+      @media @phone {
+        width: auto;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -75,6 +99,12 @@
       width: 46%;
       margin-left: 4%;
       
+      @media @phone {
+        width: auto;
+        margin-left: 0;
+        margin-bottom: 4%;
+      }
+
       img {
         width: 100%;
         height: auto;
