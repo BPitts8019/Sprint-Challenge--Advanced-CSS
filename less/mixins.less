@@ -1,1 +1,27 @@
 // Mixins Here
+.auto-scale () {
+   height: auto;
+   width: auto;
+   max-width: 100%;
+}
+
+.curved-borders () {
+   border-radius: 5px;
+}
+
+.custom-layout (@justify, @align: flex-start, @direction: row, @wrap: nowrap) {
+   display: flex;
+   flex-flow: @direction @wrap;
+   justify-content: @justify;
+   align-items: @align;
+}
+
+.button (@text-color: black, @bg-color: magenta, @width: 100%, @padding: 0) {
+   background-color: @bg-color;
+   cursor: pointer;
+   color: @text-color;
+   font-size: 2rem;
+   text-align: center;
+   padding: @padding;
+   width: @width;
+}
